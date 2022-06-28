@@ -1,4 +1,3 @@
-#2
 def read_txt_file():
   file = 'file.txt'
   with open(file, 'r', encoding='utf-8') as f:
