@@ -1,9 +1,3 @@
-# Смотрин Николай: пишет в файл
-def write_in_txt_file():
-  with open('text.txt', 'w') as writer:
-    writer.write('I love Git')
-    return True
-
 #  Сидоров Станислав: читает с файла
 def read_txt_file():
   file = 'file.txt'
@@ -22,3 +16,18 @@ def delete_file():
   except:
     print("The system cannot find the file specified")
     return False
+
+# Смотрин Николай: пишет в файл
+def write_in_txt_file():
+  with open('text.txt', 'w') as writer:
+    writer.write('I love Git')
+    return True
+    
+if __name__ == "__main__":
+     if write_in_txt_file():
+        print("[OK] write")
+        
+     print(read_txt_file())
+    
+    if delete_file():
+      print("[OK] delete")
